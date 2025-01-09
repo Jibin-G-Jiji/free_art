@@ -58,3 +58,32 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,1,1) 35%, rgba(0,
  .containers{
     margin-top: 40px;
  }
+ .container{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,1,1) 35%, rgba(0,212,255,1) 100%);
+ }
+ .image-rows img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Optional: Add rounded corners */
+
+ }
+ .image-rows img:nth-child(1):hover {
+    filter: blur(5px); /* Applies a 5px blur */
+
+ }
+ .image-rows img:nth-child(2):hover {
+    filter: grayscale(100%); /* Converts the element to grayscale */
+ }
+ .image-rows img:nth-child(3):hover {
+    filter: drop-shadow(10px 10px 5px gray); /* Adds a shadow */
+ }
+.image-rows img:nth-child(4):hover{
+    filter: hue-rotate(90deg); /* Rotates the hue by 90 degrees */
+
+}
+.image-rows img:nth-child(5):hover {
+    filter: opacity(50%); /* Reduces opacity to 50% */
+}
+.image-rows img:nth-child(6):hover {
+    filter: blur(5px); /* Applies a 5px blur */
+}
