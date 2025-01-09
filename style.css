@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,1,1) 35%, rgba(0,212,255,1) 100%);
+}
+.content{
+    width: 100vw;
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: start;
+flex-direction: column;
+    color: white; 
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,1,1) 35%, rgba(0,212,255,1) 100%);
+}
+.content h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+.container p{
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 23%;
+
+}
+.image-row img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+.image-row img:hover {
+    transform: rotate(20deg); /* Slight zoom-in effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+  /* Optional: Different effect per image (rotate example) */
+  .image-row img:nth-child(2):hover {
+    transform: rotate(-20deg); /* Rotate and zoom */
+}
+
+/* Optional: Different effect for the last image (translate example) */
+.image-row img:nth-child(3):hover {
+    transform: rotateY(20deg); /* Move up and zoom */
+}
+.image-row img:nth-child(4):hover {
+   transform: scale(1.2);
+}
+.image-row img:nth-child(5):hover {
+    transform: skew(25deg);
+ }
+ .image-row img:nth-child(6):hover {
+    transform: translate(20px);
+ }
+ .containers{
+    margin-top: 40px;
+ }
